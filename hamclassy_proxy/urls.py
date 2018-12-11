@@ -19,5 +19,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^', include('apps.proxy.urls', namespace='proxy')),
+    url(r'^', include('proxy.urls', namespace='proxy')),
 ]

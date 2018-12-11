@@ -37,7 +37,7 @@ def proxy_view(request, url, requests_args=None):
     requests_args['headers'] = headers
     requests_args['params'] = params
 
-    response = requests.request(request.method, url, **requests_args)
+    response = requests.request(request.method, "https://" + url, **requests_args)
 
     proxy_response = HttpResponse(
         response.content,

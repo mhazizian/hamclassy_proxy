@@ -4,5 +4,5 @@ from .views import proxy_view
 app_name = 'proxy'
 
 urlpatterns = [
-    url(r'^(?P<url>.*)$', proxy_view, name='proxy'),
+    url(r'proxy/^(?P<url>.*)$', proxy_view, name='proxy'),
 ]
